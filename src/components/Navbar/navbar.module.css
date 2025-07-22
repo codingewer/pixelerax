@@ -1,0 +1,79 @@
+.navbarcontanier {
+    position: sticky;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    z-index: 5;
+}
+
+
+.navbar {
+    width: 80%;
+    height: 100px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding-block: 24px;
+    color: var(--foreground);
+    background-color: transparent;
+}
+
+.logo {
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.emptydiv {
+    width: 10%;
+    height: 100%;
+}
+
+.navlinks {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    height: 100%;
+}
+
+.navlink {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 0px 24px 0px 24px;
+    align-items: center;
+    transition: 1s, ease-in-out;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--foreground);
+    background-color: transparent;
+    clip-path: var(--clip-bottom-right);
+}
+
+.navlink:hover {
+    transition: 1s, ease-in-out;
+    color: var(--hover-foreground-color);
+}
+
+.bottom-right-clipped {
+    clip-path: var(--clip-bottom-right);
+
+}
+
+.bottomrightclipped::before {
+    clip-path: var(--clip-bottom-right);
+}
+
+@media screen and (max-width: 768px) {
+   .navbarcontanier{
+    display: none;
+   }
+}

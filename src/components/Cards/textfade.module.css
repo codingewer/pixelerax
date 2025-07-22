@@ -1,0 +1,34 @@
+.container {
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background: transparent;
+    font-size: 1.2rem;
+    padding: 12px;
+    background: transparent;
+}
+
+
+
+
+.text {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    will-change: transform, opacity;
+    font-size: 24px;
+}
+
+.slideUp {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+
+    .text {
+        font-size: 16px;
+    }
+}
