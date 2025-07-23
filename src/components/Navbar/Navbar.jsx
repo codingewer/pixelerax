@@ -7,7 +7,7 @@ import Link from 'next/link';
 function Navbar() {
   return (
     <div className={styles.navbarcontanier} >
-      <div className={styles.emptydiv} ></div>
+      <div className={`${styles.emptydiv} ${styles.emptydivleft}`} ></div>
       <div className={styles.navbar} >
         <div className={styles.logo}>
           <Link href="/">
@@ -23,7 +23,7 @@ function Navbar() {
 
         </div>
       </div>
-      <div className={styles.emptydiv} ></div>
+      <div className={`${styles.emptydiv} ${styles.emptydivright}`} ></div>
     </div>
   )
 }

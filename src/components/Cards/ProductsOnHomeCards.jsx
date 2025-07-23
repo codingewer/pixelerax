@@ -1,6 +1,8 @@
 import React, { useRef } from 'react'
 import styles from "./homeproductlist.module.css"
 import Link from 'next/link';
+import arrowrigth from "../../assets/arrow-right.svg"
+import Image from 'next/image';
 
 function ProductsOnHomeCards() {
     const shadowRef = useRef(null);
@@ -35,7 +37,7 @@ function ProductsOnHomeCards() {
                 </div>
                 <div className={`${styles.card} ${styles.card2}`}>
                     <svg className={styles.borderAnim} viewBox="0 0 100 100" preserveAspectRatio="none">
-                        <rect x="0.25" y="0.25" width="99.5" height="99.5" rx="2" ry="7" />
+                        <rect x="0.25" y="0.25" width="99.5" height="99.5" rx="4" ry="8" />
                     </svg>
                     <h2  >Yapa Zeka Destekli Mobil Uygulamalar</h2>
                     <p>Yapa Zeka Destekli Mobil Uygulamalar</p>
@@ -43,12 +45,15 @@ function ProductsOnHomeCards() {
                 </div>
                 <div className={`${styles.card} ${styles.card3}`}>
                     <svg className={styles.borderAnim} viewBox="0 0 100 100" preserveAspectRatio="none">
-                        <rect x="0.25" y="0.25" width="99.5" height="99.5" rx="2" ry="7" />
+                        <rect x="0.25" y="0.25" width="99.5" height="99.5" rx="4" ry="8" />
                     </svg>
                     <h2>Sunucu taraflı uygulamalar</h2>
                     <p>Sunucu taraflı uygulamalar</p>
                     <Link href="/">Detaylı Bilgi</Link>
                 </div>
+                <Link className={styles.moreproductslink} href="/">
+                <Image src={arrowrigth} alt='daha fazla' />
+                </Link>
             </div>
         </div>
     )

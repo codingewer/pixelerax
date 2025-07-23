@@ -8,9 +8,9 @@
   --foreground: #F5FEFF;
   --main-color: #37b7c3;
   --second-color: #A9B5DF;
-  --hover-foreground-color: #c8d5ff;
   --foreground-2: #5d6277;
-  --hover-foreground-color: #0D2745;
+    --foreground-2-alpha: rgba(93, 98, 119, 0.5);
+  --hover-foreground-color: #a0b6ce;
   --hover-color: rgba(206, 215, 247, 0.5);
   --clip-bottom-left: polygon(0% 0%, 100% 0%, 100% 200%, 0% 90%, 0% 10%);
   --clip-top-left: polygon(2.5% 0%, 100% 0%, 100% 200%, 0% 100%, 0% 5%);

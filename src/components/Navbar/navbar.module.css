@@ -1,4 +1,5 @@
 .navbarcontanier {
+    height: 80px;
     position: sticky;
     position: fixed;
     top: 0;
@@ -6,12 +7,14 @@
     display: flex;
     flex-direction: row;
     z-index: 5;
+    background-color: var(--background50op);
 }
 
 
 .navbar {
     width: 80%;
-    height: 100px;
+    height: 100%;
+    padding-inline: 24px;
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -32,35 +35,77 @@
 }
 
 .emptydiv {
-    width: 10%;
+    position: relative;
+    width: calc(10% - 24px);
     height: 100%;
+}
+
+.emptydivright {
+    border-left: 1px solid var(--hover-foreground-color);
+}
+
+.emptydivleft {
+    border-right: 1px solid var(--hover-foreground-color);
+
+}
+
+
+.emptydivleft::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    top: 25%;
+    right: 0;
+    background-color: var(--hover-foreground-color);
+}
+
+.emptydivright::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    top: 75%;
+    left: 0;
+    background-color: var(--hover-foreground-color);
 }
 
 .navlinks {
     position: relative;
     display: flex;
     flex-direction: row;
-    gap: 12px;
+    gap: 48px;
     height: 100%;
 }
 
 .navlink {
     position: relative;
     display: flex;
-    justify-content: center;
-    padding: 0px 24px 0px 24px;
+    text-align: left;
+    justify-content: start;
     align-items: center;
-    transition: 1s, ease-in-out;
     font-size: 16px;
     font-weight: 600;
     color: var(--foreground);
     background-color: transparent;
-    clip-path: var(--clip-bottom-right);
+    overflow: hidden; /* çizginin taşmasını önlemek için */
 }
 
-.navlink:hover {
-    transition: 1s, ease-in-out;
-    color: var(--hover-foreground-color);
+.navlink::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--hover-foreground-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.navlink:hover::after {
+    transform: scaleX(1);
 }
 
 .bottom-right-clipped {
@@ -73,7 +118,7 @@
 }
 
 @media screen and (max-width: 768px) {
-   .navbarcontanier{
-    display: none;
-   }
+    .navbarcontanier {
+        display: none;
+    }
 }
