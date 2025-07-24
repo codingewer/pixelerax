@@ -28,12 +28,12 @@ function HomeContent() {
               <Link href="" className={` ${styles.cardlink} ${styles.linecardlink}`}>Fiyatlandırma</Link>
             </div>
             <div className={styles.bannerlistview} >
-             <Model/>
+              <Model />
             </div>
           </div>
         </div>
       </div>
-      <ProductsOnHomeCards/>
+      <ProductsOnHomeCards />
     </div>
   )
 }

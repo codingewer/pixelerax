@@ -169,13 +169,17 @@
 
    
     .homebanner {
+        position: relative;
         flex-direction: column;
         height: auto;
         padding-top: 100px;
-        min-height: 100dvh;
+        min-height: 100vh;
     }
 
-    .bannercontentcontainer {
+    .homecontentcontainer {
         padding: 24px;
+        display: flex;
+        flex-direction: column;
+        min-height:min-content;
     }
 }
