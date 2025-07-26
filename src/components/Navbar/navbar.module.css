@@ -1,3 +1,6 @@
+.logo{
+
+}
 .navbarcontanier {
     height: 80px;
     position: sticky;
@@ -29,7 +32,7 @@
     overflow: hidden;
 }
 
-.logo img {
+.logoimg {
     width: 100%;
     height: 100%;
 }

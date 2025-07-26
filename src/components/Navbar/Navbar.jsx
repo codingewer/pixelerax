@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./navbar.module.css";
-import logo from "../../../public/logo.svg"
+import Logo from "../../../public/logo.svg"
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -11,7 +11,7 @@ function Navbar() {
       <div className={styles.navbar} >
         <div className={styles.logo}>
           <Link href="/">
-            <Image alt='PixeleraX'  src={logo} />
+            <Logo className={styles.logoimg} alt='PixeleraX'   />
           </Link>
         </div>
         <div className={styles.navlinks}>

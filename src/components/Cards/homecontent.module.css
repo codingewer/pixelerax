@@ -72,16 +72,14 @@
     color: var(--foreground);
     background-color: var(--foreground);
     clip-path: var(--clip-bottom-right);
+    z-index: 0; /* before'un -1 olabilmesi için gerekli */
 }
 
 .linecardlink::before {
     content: '';
-    inset: 1;
-    background: var(--background);
-    display: block;
     position: absolute;
-    bottom: 1px;
-    right: 1px;
+    inset: 1px; /* <--- 1 yerine 1px olmalı */
+    background: var(--background);
     z-index: -1;
     clip-path: var(--clip-bottom-right);
 }

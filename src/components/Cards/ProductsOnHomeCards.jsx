@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import styles from "./homeproductlist.module.css"
 import Link from 'next/link';
-import arrowrigth from "../../assets/arrow-right.svg"
+import Arrowrigth from "../../assets/arrow-right.svg"
 import Image from 'next/image';
 
 function ProductsOnHomeCards() {
@@ -54,7 +54,7 @@ function ProductsOnHomeCards() {
                     <Link className={styles.cardlink} href="/">Detaylı Bilgi</Link>
                 </div>
                 <Link className={styles.moreproductslink} href="/">
-                    <Image src={arrowrigth} alt='daha fazla' />
+                    <Arrowrigth className="svgicononlink" width={40} height={40} alt='daha fazla' />
                 </Link>
             </div>
         </div>

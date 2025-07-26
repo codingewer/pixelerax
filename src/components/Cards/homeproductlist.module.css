@@ -72,10 +72,9 @@
 
 
 
-
 .borderAnim {
   position: absolute;
-  width: calc(100%+ 4px);
+  width: calc(100% + 4px);  /* + işaretinin etrafında boşluk şart */
   height: calc(100% + 4px);
   stroke: var(--foreground);
   stroke-width: 0.25;
@@ -93,6 +92,7 @@
 .card:hover .borderAnim {
   stroke-dashoffset: 0;
 }
+
 
 .card:hover {
   background-color: var(--background50op);
@@ -135,7 +135,7 @@
   margin-top: 48px;
 }
 
-.moreproductslink img {
+.svgicononlink {
   width: 50%;
   height: 50%;
 }
