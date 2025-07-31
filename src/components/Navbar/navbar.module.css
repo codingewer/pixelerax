@@ -137,6 +137,7 @@
         display: flex;
         background: none;
         border: none;
+        color: var(--foreground-2);
     }
     .navbar{
         width: 100%;
