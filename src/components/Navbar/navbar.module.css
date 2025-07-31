@@ -1,6 +1,5 @@
-.logo{
+.logo {}
 
-}
 .navbarcontanier {
     height: 80px;
     position: sticky;
@@ -53,7 +52,7 @@
 }
 
 
-.emptydivleft::before{
+.emptydivleft::before {
     content: "";
     position: absolute;
     width: 100px;
@@ -63,7 +62,7 @@
     background-color: var(--hover-foreground-color);
 }
 
-.emptydivright::before{
+.emptydivright::before {
     content: "";
     position: absolute;
     width: 100px;
@@ -91,7 +90,8 @@
     font-weight: 600;
     color: var(--foreground);
     background-color: transparent;
-    overflow: hidden; /* çizginin taşmasını önlemek için */
+    overflow: hidden;
+    /* çizginin taşmasını önlemek için */
 }
 
 .navlink::after {
@@ -120,10 +120,26 @@
     clip-path: var(--clip-bottom-right);
 }
 
-@media screen and (max-width: 768px) {
-    .navbarcontanier {
-        display: none;
-    }
+.navmenubutton {
+    display: none;
 }
 
+@media screen and (max-width: 768px) {
+    .emptydiv {
+        display: none;
+    }
 
+    .navlinks {
+        display: none;
+    }
+
+    .navmenubutton {
+        display: flex;
+        background: none;
+        border: none;
+    }
+    .navbar{
+        width: 100%;
+    }
+
+}

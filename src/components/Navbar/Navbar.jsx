@@ -3,7 +3,8 @@ import React, { useEffect, useState } from 'react'
 import styles from "./navbar.module.css";
 import Link from 'next/link';
 import { MdNightlightRound, MdSunny } from "react-icons/md";
-
+import { Logs } from 'lucide-react';
+import SidebarMenu from './SidebarMenu';
 function Navbar() {
   const [theme, setTheme] = useState("dark");
 
@@ -20,8 +21,11 @@ function Navbar() {
     document.documentElement.setAttribute("data-theme", newTheme);
     localStorage.setItem("theme", newTheme);
   };
+    const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className={styles.navbarcontanier} >
+            <SidebarMenu open={menuOpen} onClose={() => setMenuOpen(false)} />
       <div className={`${styles.emptydiv} ${styles.emptydivleft}`} ></div>
       <div className={styles.navbar} >
         <div className={styles.logo}>
@@ -48,12 +52,13 @@ function Navbar() {
             <div className={`toggle-thumb ${theme}`}>
               {
                 theme === "dark" ? <span className="icon-sun"><MdSunny /></span>
-                  :
-                  <span className="icon-moon"><MdNightlightRound /></span>
+                :
+                <span className="icon-moon"><MdNightlightRound /></span>
               }
             </div>
           </button>
         </div>
+              <button className={styles.navmenubutton} onClick={() => setMenuOpen(!menuOpen)} isOpen={menuOpen} ><Logs/> </button>
       </div>
       <div className={`${styles.emptydiv} ${styles.emptydivright}`} ></div>
     </div>
