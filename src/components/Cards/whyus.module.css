@@ -1,0 +1,144 @@
+.whyuscontainer {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: var(--background);
+  align-items: center;
+  justify-content: center;
+}
+
+.whyuscontent {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+ 
+  transition: all 0.5s ease;
+  overflow: visible;
+}
+
+.whyuscontent::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 0;
+  left: 12px;
+  top: 0;
+  transition: height 1s ease-in-out;
+  background-color: var(--foreground);
+  z-index: 10;
+}
+
+.whyuscontent::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  left: 0;
+  top: 12px;
+  transition: width 1s ease-in-out;
+  background-color: var(--foreground);
+  z-index: 10;
+}
+
+/* Masaüstü hover */
+@media (min-width: 769px) {
+  .whyuscontent:hover::before {
+    height: 50%;
+  }
+  .whyuscontent:hover::after {
+    width: 50%;
+  }
+}
+
+/* Mobil scroll ile aktif */
+@media (max-width: 768px) {
+  .whyuscontent {
+    width: 80%;
+    height: fit-content;
+  }
+  .whyuscontent.active::before {
+    height: 50%;
+  }
+  .whyuscontent.active::after {
+    width: 50%;
+  }
+  .whyustexts{
+    width: 100%;
+    padding: 0px;
+  }
+}
+
+/* whyustexts ve blur arka plan efekti */
+.whyustexts {
+  position: relative;
+  width: calc(100% - 32px);
+  height: calc(100% - 32px);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 32px;
+  padding: 48px;
+  background-color: var(--background25op);
+  
+}
+
+.whyustexts::after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+ height: calc(100% - 32px);
+ width: calc(100% - 32px);
+  filter: blur(3px);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: -2;
+  background-image: url("../../assets/hologramicshape.svg");
+}
+
+/* Masaüstü hover blur */
+@media (min-width: 769px) {
+  .whyustexts:hover::after {
+    opacity: 1;
+  }
+}
+
+/* Mobil scroll ile blur otomatik */
+@media (max-width: 768px) {
+  .whyustextsopacityactive::after {
+    opacity: 1;
+  }
+}
+
+/* Yazı fontları */
+.whyustexts h1 {
+  font-size: 64px;
+  margin: 0;
+}
+
+.whyustexts p {
+  font-size: 20px;
+  margin: 0;
+  line-height: 1.5;
+  color: var(--foreground);
+}
+
+/* Mobil font küçült */
+@media (max-width: 768px) {
+  .whyustexts h1 {
+    font-size: 28px;
+  }
+  .whyustexts p {
+    font-size: 16px;
+  }
+}

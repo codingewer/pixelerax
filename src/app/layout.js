@@ -12,13 +12,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "AIVonByte",
+  title: "mithrabyte",
   description: "Yapay zeka uygulamaları",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="tr">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>

@@ -1,13 +1,12 @@
 import styles from "./homecontent.module.css"
 import Link from 'next/link'
 import dynamic from "next/dynamic";
-import React, { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
-import { Center, OrbitControls } from "@react-three/drei";
-import TextSlideshow from "./TextFade";
+import React from "react";
 import TextSlider from "./TextFade";
-import { motion } from 'framer-motion';
 import ProductsOnHomeCards from "./ProductsOnHomeCards";
+import WhyUs from "./WhyUs";
+import PricingListAthome from "./PricingListAthome"
+import Footer from "../Footer/Footer"
 
 // SSR hatalarını önlemek için Canvas içeriğini dinamik yükle
 const Model = dynamic(() => import("../Models/HomeModel"), { ssr: false });
@@ -34,6 +33,9 @@ function HomeContent() {
         </div>
       </div>
       <ProductsOnHomeCards />
+      <WhyUs/>
+      <PricingListAthome/>
+      <Footer/>
     </div>
   )
 }
