@@ -6,7 +6,6 @@ import TextSlider from "./TextFade";
 import ProductsOnHomeCards from "./ProductsOnHomeCards";
 import WhyUs from "./WhyUs";
 import PricingListAthome from "./PricingListAthome"
-import Footer from "../Footer/Footer"
 
 // SSR hatalarını önlemek için Canvas içeriğini dinamik yükle
 const Model = dynamic(() => import("../Models/HomeModel"), { ssr: false });
@@ -35,7 +34,6 @@ function HomeContent() {
       <ProductsOnHomeCards />
       <WhyUs/>
       <PricingListAthome/>
-      <Footer/>
     </div>
   )
 }

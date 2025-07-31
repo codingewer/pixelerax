@@ -1,0 +1,139 @@
+.container {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    min-height: 80vh;
+    width: 80%;
+    margin: 2rem auto;
+    background-color: var(--background);
+    border-radius: 1rem;
+    overflow: hidden;
+    gap: 2rem;
+    font-family: "Turret Road", sans-serif;
+}
+
+.left,
+.right {
+    flex: 1;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.left {
+    background-color: var(--background);
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--foreground);
+}
+
+.formGroup {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--foreground);
+}
+
+.input,
+.textarea {
+    padding: 0.75rem 1rem;
+    border: none;
+    background-color: var(--background-2);
+    color: var(--foreground-2);
+    font-size: 1rem;
+    resize: none;
+    border-bottom: 1px solid var(--foreground-2);
+}
+
+.input:focus,
+.textarea:focus {
+    outline: none;
+    border-color: var(--main-color);
+}
+
+.formbutton {
+    position: relative;
+    padding: 0.8rem 1.5rem;
+    color: var(--color-white);
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    background: none;
+    align-self: flex-start;
+    transition: ease-in-out 1s;
+}
+.formbutton::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 10%;
+    background-color: var(--foreground);
+    right: 0;
+    bottom: 0;
+    transition: ease-in-out 0.5s;
+
+}
+
+.formbutton:hover::before{
+    height: 50%;
+    
+}
+.formbutton::after {
+    position: absolute;
+    content: "";
+    width:10%;
+    height: 1px;
+    background-color: var(--foreground);
+    right: 0;
+    bottom: 0;
+    transition: ease-in-out 0.5s;
+    
+}
+
+.formbutton:hover::after{
+ width: 50%;
+} 
+
+
+.right {
+    background-color: var(--background-2);
+    color: var(--foreground-2);
+    font-size: 1.1rem;
+    gap: 1rem;
+}
+
+.infoItem {
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color:var(--foreground)
+}
+
+.infoIcon {
+    font-size: 1.5rem;
+    color: var(--foreground-2);
+    min-width: 30px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        max-width: 95vw;
+    }
+
+    .left,
+    .right {
+        padding: 1.5rem 1.8rem;
+    }
+}

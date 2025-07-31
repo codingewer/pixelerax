@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "./pricinglistathome.module.css"
+import Link from 'next/link';
 
 function PricingListAthome() {
   const packages = [
@@ -38,7 +39,7 @@ function PricingListAthome() {
                 ))}
               </ul>
               <div className={styles.price}>{pkg.price}</div>
-                              <button className={styles.button}>Teklif Al</button>
+              <Link href="" className={`${styles.button}`}>Teklif Al</Link>
             </div>
           ))}
         </div>

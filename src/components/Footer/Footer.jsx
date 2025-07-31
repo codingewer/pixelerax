@@ -19,9 +19,10 @@ export default function Footer() {
         {/* Menü linkleri */}
         <div className={styles.links}>
           <Link href="/" className={styles.link}>Ana Sayfa</Link>
-          <Link href="/hakkimizda" className={styles.link}>Hakkımızda</Link>
-          <Link href="/hizmetler" className={styles.link}>Hizmetler</Link>
-          <Link href="/iletisim" className={styles.link}>İletişim</Link>
+                    <Link className={styles.link} href="packages" >Paketler</Link>
+          <Link href="/aboutus" className={styles.link}>Hakkımızda</Link>
+          <Link href="/services" className={styles.link}>Hizmetler</Link>
+          <Link href="/contact" className={styles.link}>İletişim</Link>
         </div>
       </div>
     </footer>

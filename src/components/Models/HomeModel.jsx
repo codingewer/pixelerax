@@ -39,7 +39,7 @@ export default function Model() {
       baseColor: [0.3, 0.3, 0.3],
       markerColor: [0.216, 0.718, 0.765],
       glowColor: [0, 0, 0],
-      opacity:0.80,
+      opacity:1,
       markers: [
         { location: [37.566666, 44.283333], size: 0.05 },
       ],

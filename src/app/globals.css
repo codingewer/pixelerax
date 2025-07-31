@@ -1,24 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
 
 :root {
-  --color-white: #F5FEFF;
-  --background: #0b0d10;
-    --background-2: #101216;
-  --background25op: rgba(11, 13, 16, 0.25);
-  --background50op: rgba(11, 13, 16, 0.5);
-  --foreground: #F5FEFF;
-  --main-color: #37b7c3;
-  --second-color: #A9B5DF;
-  --foreground-2: #5d6277;
-    --foreground-2-alpha: rgba(93, 98, 119, 0.5);
-  --hover-foreground-color: #a0b6ce;
-  --hover-color: rgba(206, 215, 247, 0.5);
   --clip-bottom-left: polygon(0% 0%, 100% 0%, 100% 200%, 0% 90%, 0% 10%);
   --clip-top-left: polygon(2.5% 0%, 100% 0%, 100% 200%, 0% 100%, 0% 5%);
   --clip-top-line-left: polygon(90% 0%, 100% 0%, 100% 200%, 0% 100%, 0% 80%);
   --clip-top-right: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 0 100%);
   --clip-bottom-right: polygon(0 0, 100% 0, 100% 80%, 90% 100%, 0 100%);
   --clip-bottom-line-right: polygon(0 0, 100% 0, 100% 80%, 90% 100%, 0 100%);
+}
+:root[data-theme='dark'] {
+  /* === Dark Tema Varsayılan Renkler === */
+  --color-white: #F5FEFF;
+  --background: #0b0d10;
+  --background-2: #101216;
+  --background25op: rgba(11, 13, 16, 0.25);
+  --background50op: rgba(11, 13, 16, 0.5);
+  --foreground: #F5FEFF;
+  --main-color: #37b7c3;
+  --second-color: #A9B5DF;
+  --foreground-2: #5d6277;
+  --foreground-2-alpha: rgba(93, 98, 119, 0.5);
+  --hover-foreground-color: #a0b6ce;
+  --hover-color: rgba(206, 215, 247, 0.5);
+}
+
+/* === Light Tema Override === */
+:root[data-theme='light'] {
+  --color-white: #0b0d10;
+  --background: #f6f9fb;
+  --background-2: #eef3f7;
+  --background25op: rgba(230, 234, 240, 0.25);
+  --background50op: rgba(230, 234, 240, 0.5);
+  --foreground: #0b0d10;
+  --main-color: #318ca0;
+  --second-color: #4a597d;
+  --foreground-2: #6e778a;
+  --foreground-2-alpha: rgba(110, 119, 138, 0.5);
+  --hover-foreground-color: #5c7a96;
+  --hover-color: rgba(100, 110, 130, 0.2);
 }
 
 html,
@@ -33,13 +52,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Turret Road", sans-serif;
-
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  transition:
+    background-color 1s ease,
+    color 0.3s ease,
+    border-color 1s ease;
 }
 
 .imagefullindiv {
@@ -61,7 +80,6 @@ a {
   box-sizing: border-box;
 }
 
-
 .cardlink {
   color: var(--foreground);
   border-radius: 0;
@@ -80,8 +98,54 @@ a {
   background-color: var(--foreground);
 }
 
-
 .cardlink:hover::after {
   width: 100%;
   transition: ease 1s;
+}
+
+.theme-toggle {
+  width: 60px;
+  height: 28px;
+  background: var(--background-2);
+  border-radius: 999px;
+  border: 2px solid var(--foreground-2);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+.theme-toggle .toggle-thumb {
+  width: 30px;
+  height: 90%;
+  background: var(--foreground-2);
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease;
+  transform: translateX(0);
+}
+
+.icon-sun, .icon-moon{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--background);
+}
+
+[data-theme="light"] .theme-toggle .toggle-thumb {
+  transform: translateX(18px);
+}
+
+
+.pagewrapped{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

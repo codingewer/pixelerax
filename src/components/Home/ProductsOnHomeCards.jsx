@@ -77,9 +77,7 @@ function ProductsOnHomeCards() {
                     </p>
                     <Link className="cardlink" href="/">Detaylı Bilgi</Link>
                 </div>
-                <Link className={styles.moreproductslink} href="/">
-                    <img className={styles.svgicononlink} src="/arrow-right.svg" alt='daha fazla' />
-                </Link>
+             
             </div>
         </div>
     )
