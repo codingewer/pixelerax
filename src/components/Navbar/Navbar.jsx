@@ -5,22 +5,9 @@ import Link from 'next/link';
 import { MdNightlightRound, MdSunny } from "react-icons/md";
 import { Logs } from 'lucide-react';
 import SidebarMenu from './SidebarMenu';
+import ThemeSwticher from './ThemeSwticher';
 function Navbar() {
-  const [theme, setTheme] = useState("dark");
 
-  useEffect(() => {
-    // LocalStorage'dan tema al
-    const storedTheme = localStorage.getItem("theme") || "dark";
-    setTheme(storedTheme);
-    document.documentElement.setAttribute("data-theme", storedTheme);
-  }, []);
-
-  const toggleTheme = () => {
-    const newTheme = theme === "dark" ? "light" : "dark";
-    setTheme(newTheme);
-    document.documentElement.setAttribute("data-theme", newTheme);
-    localStorage.setItem("theme", newTheme);
-  };
     const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -43,22 +30,9 @@ function Navbar() {
           <Link className={styles.navlink} href="aboutus" >Hakkımızda</Link>
           <Link className={styles.navlink} href="contact" >İletişim</Link>
 
-          <button
-            onClick={toggleTheme}
-            aria-label="Toggle Theme"
-            className="theme-toggle"
-          >
-
-            <div className={`toggle-thumb ${theme}`}>
-              {
-                theme === "dark" ? <span className="icon-sun"><MdSunny /></span>
-                :
-                <span className="icon-moon"><MdNightlightRound /></span>
-              }
-            </div>
-          </button>
+       <ThemeSwticher/>
         </div>
-              <button className={styles.navmenubutton} onClick={() => setMenuOpen(!menuOpen)} isOpen={menuOpen} ><Logs/> </button>
+              <button className={styles.navmenubutton} onClick={() => setMenuOpen(!menuOpen)}  ><Logs/> </button>
       </div>
       <div className={`${styles.emptydiv} ${styles.emptydivright}`} ></div>
     </div>
