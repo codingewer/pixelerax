@@ -32,7 +32,7 @@ export const metadata = {
     siteName: "Mithrabyte",
     images: [
       {
-        url: "/og_image.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Mithrabyte - Yapay Zeka Destekli Çözümler",
