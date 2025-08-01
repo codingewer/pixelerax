@@ -24,15 +24,15 @@ export const metadata = {
     "veri analizi",
     "mithrabyte"
   ],
-  metadataBase: new URL("https://mithrabyte.com"),
+  metadataBase: new URL("https://pixelerax.vercel.app/"),
   openGraph: {
     title: "Mithrabyte",
     description: "Yapay zeka destekli mobil ve web uygulamalarıyla işinizi büyütün.",
-    url: "https://mithrabyte.com",
+    url: "https://pixelerax.vercel.app/",
     siteName: "Mithrabyte",
     images: [
       {
-        url: "og_image.png",
+        url: "/og_image.png",
         width: 1200,
         height: 630,
         alt: "Mithrabyte - Yapay Zeka Destekli Çözümler",
@@ -45,7 +45,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Mithrabyte",
     description: "Yapay zeka destekli mobil ve web uygulamalarıyla işinizi büyütün.",
-    images: ["/og_image.png"],
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
@@ -56,7 +56,7 @@ export const metadata = {
     },
   },
   alternates: {
-    canonical: "https://mithrabyte.com",
+    canonical: "https://pixelerax.vercel.app/",
   },
 };
 
