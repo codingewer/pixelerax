@@ -20,10 +20,10 @@ function HomeContent() {
               <span className={
                 styles.homebannertitle
               } >
-                Devlerin liginde mücadeleye etmek isteyenlerin yeri
+                Daha Akıllı Uygulamalarla Rakiplerinizin Önüne Geçin
               </span>
               <TextSlider />
-              <Link href="" className={` ${styles.cardlink} ${styles.linecardlink}`}>Fiyatlandırma</Link>
+              <Link href="packages" className={` ${styles.cardlink} ${styles.linecardlink}`}>Paketler</Link>
             </div>
             <div className={styles.bannerlistview} >
               <Model />

@@ -5,11 +5,11 @@ import Contact from  '@/components/Pages/Contact'
 
 function page() {
   return (
-    <>
+    <div className='pagewrapped'>
     <Navbar/>
     <Contact/>
     <Footer/>
-    </>
+    </div>
   )
 }
 

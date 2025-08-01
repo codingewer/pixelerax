@@ -28,7 +28,6 @@
   background-color: var(--background25op);
   border-radius: 16px;
   padding: 48px;
-  color: white;
   transition: background-color 0.4s ease;
   display: flex;
   flex-direction: column;

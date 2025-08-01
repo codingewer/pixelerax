@@ -1,5 +1,4 @@
 .container {
-    padding-top: 100px;
     display: flex;
     flex-direction: row;
     min-height: 80vh;
@@ -25,7 +24,8 @@
     background-position: contain;
     background-repeat: no-repeat;
     filter: blur(50px);
-    background-image: url("../../assets/squareblur.svg");
+    opacity: 0.5;
+    background-image: url("../../assets/trapezoidblur.svg");
 }
 
 .title {

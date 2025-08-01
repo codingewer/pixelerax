@@ -37,8 +37,7 @@ function WhyUs() {
         >
           <h1>Neden Biz?</h1>
           <p>
-            çünkü iş bulamıyoz abii
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio cupiditate doloribus commodi id reprehenderit, doloremque illo asperiores minus error culpa quo temporibus maxime numquam esse, fugiat magnam ad nesciunt quaerat!
+            Biz, her projeyi kendi işimiz gibi görür, sade ve etkili çözümler üretmeye odaklanırız. Mobil uygulamalardan yapay zeka destekli platformlara, veri analizinden özel geliştirdiğimiz araçlara kadar geniş bir yelpazede yüksek kaliteyi ve performansı ön planda tutarız. Teknolojiyi sadece kullanmakla kalmaz, işin ruhunu ve kullanıcı deneyimini derinlemesine anlayarak projelere yansıtırız. Küçük ama çevik bir ekip olarak, hızlı ve esnek hareket eder; ihtiyaçlarınıza özel, size değer katan yazılım çözümleri sunarız. Teslim sonrası destekle, uzun vadeli iş ortaklıkları kurmayı hedefleriz. Eğer işine önem veren, sonuç odaklı bir yazılım ortağı arıyorsan, doğru adrestesin.
           </p>
         </div>
         <Link className="cardlink" href="/">Detaylı Bilgi</Link>

@@ -6,11 +6,9 @@ import Footer from "../components/Footer/Footer"
 export default function Home() {
   return (
     <div className={styles.page}>
-      <Navbar/>
-     
-      <HomeContent/>
-            <Footer/>
-
+      <Navbar />
+      <HomeContent />
+      <Footer />
     </div>
   );
 }
