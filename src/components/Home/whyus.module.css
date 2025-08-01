@@ -59,29 +59,7 @@
   }
 }
 
-/* Mobil scroll ile aktif */
-@media (max-width: 768px) {
-  .whyuscontent {
-    width: 80%;
-    gap: 48px;
-    height: fit-content;
-  }
 
-  .whyuscontent.active::before {
-    height: 50%;
-  }
-
-  .whyuscontent.active::after {
-    width: 50%;
-  }
-
-  .whyustexts {
-    width: 100%;
-    padding: 0px;
-    border-right: solid 1px var(--foreground-2);
-    border-bottom: solid 1px var(--foreground-2)
-  }
-}
 
 /* whyustexts ve blur arka plan efekti */
 .whyustexts {
@@ -103,45 +81,68 @@
   position: absolute;
   height: calc(100% - 32px);
   width: calc(100% - 32px);
-  filter: blur(3px);
+  filter: blur(20px);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0;
   transition: opacity 1s ease-in-out;
   z-index: -2;
-  background-image: url("../../assets/hologramicshape.svg");
+  background-image: url("../../assets/trapezoidblur.svg");
 }
 
 /* Masaüstü hover blur */
 @media (min-width: 769px) {
   .whyustexts:hover::after {
-    opacity: 1;
+    opacity: 0.5;
   }
 }
 
-/* Mobil scroll ile blur otomatik */
+/* Mobil scroll ile aktif */
 @media (max-width: 768px) {
+  .whyuscontent {
+    width: 80%;
+    height: 80%;
+    gap: 48px;
+    height: fit-content;
+  }
+
+  .whyuscontent.active::before {
+    height: 50%;
+  }
+
+  .whyuscontent.active::after {
+    width: 50%;
+  }
+
+  .whyustexts {
+    width: 100%;
+    padding: 48px;
+    border-right: solid 1px var(--foreground-2);
+    border-bottom: solid 1px var(--foreground-2)
+  }
+
+  .whyustexts::after{
+    background-size: 150%;
+  }
+
   .whyustextsopacityactive::after {
-    opacity: 1;
+    opacity: 0.8;
   }
-}
 
-/* Yazı fontları */
-.whyustexts h1 {
-  font-size: 3rem;
-  margin: 0;
-}
+  /* Yazı fontları */
+  .whyustexts h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
 
-.whyustexts p {
-  font-size: 20px;
-  margin: 0;
-  line-height: 1.5;
-  color: var(--foreground);
-}
+  .whyustexts p {
+    font-size: 20px;
+    margin: 0;
+    line-height: 1.5;
+    color: var(--foreground);
+  }
 
-/* Mobil font küçült */
-@media (max-width: 768px) {
   .whyustexts h1 {
     font-size: 28px;
   }

@@ -43,8 +43,8 @@
   content: "";
   position: absolute;
   inset: 0;
-  filter: blur(5px);
-  background-size: auto;
+  filter: blur(50px);
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0;
@@ -207,6 +207,11 @@
     height: fit-content !important;
     padding-top: 100px;
     width: 100%;
+  }
+
+  .card::after {
+    background-size: contain;
+
   }
 
   .shadow {

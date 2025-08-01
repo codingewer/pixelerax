@@ -1,7 +1,7 @@
 .container {
     padding-top: 100px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     min-height: 80vh;
     width: 80%;
     margin: 2rem auto;
@@ -22,7 +22,10 @@
 }
 
 .left {
-    background-color: var(--background);
+    background-position: contain;
+    background-repeat: no-repeat;
+    filter: blur(50px);
+    background-image: url("../../assets/squareblur.svg");
 }
 
 .title {
@@ -33,6 +36,7 @@
 }
 
 .formGroup {
+    display: none;
     margin-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -130,6 +134,10 @@
     .container {
         flex-direction: column;
         max-width: 95vw;
+    }
+
+    .left{
+        display: none;
     }
 
     .left,

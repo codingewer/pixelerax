@@ -1,5 +1,5 @@
 import styles from './sidebarmenu.module.css';
-import { Twitter, Instagram, Linkedin, Github } from 'lucide-react';
+import {  Instagram, Github } from 'lucide-react';
 import ThemeSwticher from './ThemeSwticher';
 
 export default function SidebarMenu({ open, onClose }) {
@@ -7,15 +7,13 @@ export default function SidebarMenu({ open, onClose }) {
         { href: '/', label: 'Ana Sayfa' },
         { href: '/aboutus', label: 'Hakkımızda' },
         { href: '/packages', label: 'Paketlerimiz' },
-        { href: '/serivces', label: 'Hizmetlerimiz' },
+        { href: '/services', label: 'Hizmetlerimiz' },
         { href: '/contact', label: 'İletişim' },
     ];
 
     const socialLinks = [
-        { href: 'https://twitter.com/kullaniciadi', icon: <Twitter className={styles.socialIcon} />, label: 'Twitter' },
-        { href: 'https://instagram.com/kullaniciadi', icon: <Instagram className={styles.socialIcon} />, label: 'Instagram' },
-        { href: 'https://linkedin.com/in/kullaniciadi', icon: <Linkedin className={styles.socialIcon} />, label: 'LinkedIn' },
-        { href: 'https://github.com/kullaniciadi', icon: <Github className={styles.socialIcon} />, label: 'Github' },
+        { href: 'https://instagram.com/mithrabyte', icon: <Instagram className={styles.socialIcon} />, label: 'Instagram' },
+        { href: 'https://github.com/codingewer', icon: <Github className={styles.socialIcon} />, label: 'Github' },
     ];
 
     return (

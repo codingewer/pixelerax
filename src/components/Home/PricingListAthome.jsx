@@ -38,8 +38,11 @@ function PricingListAthome() {
                   <li key={idx}>{feature}</li>
                 ))}
               </ul>
-              <div className={styles.price}>{pkg.price}</div>
-              <Link href="" className={`${styles.button}`}>Teklif Al</Link>
+              <div className={styles.pricecontainer} >
+
+                <div className={styles.price}>{pkg.price}</div>
+                <Link href="" className={`${styles.button}`}>Teklif Al</Link>
+              </div>
             </div>
           ))}
         </div>

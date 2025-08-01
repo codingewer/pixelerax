@@ -1,7 +1,7 @@
 import styles from "./homecontent.module.css"
 import Link from 'next/link'
 import dynamic from "next/dynamic";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import TextSlider from "./TextFade";
 import ProductsOnHomeCards from "./ProductsOnHomeCards";
 import WhyUs from "./WhyUs";

@@ -1,11 +1,8 @@
 "use client";
-
-import { useFormik } from "formik";
-import * as Yup from "yup";
 import styles from "./contact.module.css";
 import { MdLocationOn, MdPhone, MdEmail, MdAccessTime } from "react-icons/md";
 export default function Contact() {
-  const formik = useFormik({
+ /* const formik = useFormik({
     initialValues: {
       name: "",
       email: "",
@@ -26,12 +23,12 @@ export default function Contact() {
       alert(`Mesajınız gönderildi!\n\n${JSON.stringify(values, null, 2)}`);
       resetForm();
     },
-  });
+  });*/
 
   return (
     <main className={styles.container}>
       <section className={styles.left}>
-        <h2 className={styles.title}>Bize Ulaşın</h2>
+      {/*  <h2 className={styles.title}>Bize Ulaşın</h2>
         <form onSubmit={formik.handleSubmit} noValidate>
           <div className={styles.formGroup}>
             <label htmlFor="name" className={styles.label}>İsim</label>
@@ -85,7 +82,7 @@ export default function Contact() {
           </div>
 
           <button type="submit" className={styles.formbutton}>Gönder</button>
-        </form>
+        </form>*/}
       </section>
 
       <section className={styles.right}>
