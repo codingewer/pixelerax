@@ -12,8 +12,52 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "mithrabyte",
-  description: "Yapay zeka uygulamaları",
+  title: "Mithrabyte | Yapay Zeka Destekli Çözümler",
+  description: "Yapay zeka destekli mobil ve web uygulamalarıyla işinizi büyütün.",
+  keywords: [
+    "yapay zeka",
+    "mobil uygulama",
+    "web geliştirme",
+    "yönetim panelleri",
+    "AI",
+    "Next.js",
+    "veri analizi",
+    "mithrabyte"
+  ],
+  metadataBase: new URL("https://mithrabyte.com"),
+  openGraph: {
+    title: "Mithrabyte",
+    description: "Yapay zeka destekli mobil ve web uygulamalarıyla işinizi büyütün.",
+    url: "https://mithrabyte.com",
+    siteName: "Mithrabyte",
+    images: [
+      {
+        url: "/og_image.png",
+        width: 1200,
+        height: 630,
+        alt: "Mithrabyte - Yapay Zeka Destekli Çözümler",
+      },
+    ],
+    locale: "tr_TR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mithrabyte",
+    description: "Yapay zeka destekli mobil ve web uygulamalarıyla işinizi büyütün.",
+    images: ["/og_image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  alternates: {
+    canonical: "https://mithrabyte.com",
+  },
 };
 
 export default function RootLayout({ children }) {
