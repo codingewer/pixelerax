@@ -1,6 +1,7 @@
 .whyuscontainer {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
+  height: fit-content;
   width: 100vw;
   display: flex;
   background-color: var(--background);
@@ -108,22 +109,28 @@
 @media (max-width: 768px) {
   .whyuscontent {
     width: 80%;
-    height: 80%;
+    height: fit-content;
     gap: 48px;
+    padding: 0;
     height: fit-content;
   }
 
   .whyuscontent.active::before {
     height: 50%;
+    left:0;
+    top: -10px;
   }
 
   .whyuscontent.active::after {
     width: 50%;
+    top: 0;
+    left: -10px;
   }
 
   .whyustexts {
     width: 100%;
-    padding: 48px;
+    padding: 24px;
+    gap: 24px;
     border-right: solid 1px var(--foreground-2);
     border-bottom: solid 1px var(--foreground-2)
   }
@@ -146,14 +153,11 @@
     font-size: 20px;
     margin: 0;
     line-height: 1.5;
+    font-size: 16px;
     color: var(--foreground);
   }
 
   .whyustexts h1 {
     font-size: 28px;
-  }
-
-  .whyustexts p {
-    font-size: 16px;
   }
 }
