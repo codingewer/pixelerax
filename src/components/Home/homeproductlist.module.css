@@ -1,10 +1,10 @@
 .container {
   position: relative;
-  height: 100%;
+  height: auto;
   width: 60%;
+  display: grid;
   grid-template-columns: 8fr 8fr 1fr;
   grid-template-rows: 8fr 8fr 1fr;
-  display: grid;
   gap: 24px;
   padding: 40px;
   box-sizing: border-box;
@@ -47,7 +47,7 @@
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0;
-  transition: opacity 2s ease-in-out;
+  transition: opacity 1s ease-in-out;
   z-index: -2;
 }
 
@@ -85,7 +85,7 @@
   pointer-events: none;
   stroke-dasharray: 400;
   stroke-dashoffset: 400;
-  transition: stroke-dashoffset 1.5s ease;
+  transition: stroke-dashoffset 1s ease;
   z-index: 3;
   stroke-linecap: round;
 }
@@ -108,7 +108,6 @@
   transition: 1s, ease-in-out;
   transition: background-image 0.5s ease-in-out;
 }
-
 
 
 /* Kart 2 ve 3 sağ sütunun üst ve alt yarısında */
@@ -140,14 +139,14 @@
 
 /*yazılar*/
 .cardtitle {
-  font-size: 36px;
+  font-size: 2rem;
   font-weight: 600;
   width: 80%;
   color: var(--foreground);
 }
 
 .cardtext {
-  font-size: 18px;
+  font-size: 1.2rem;
   width: 80%;
   color: var(--foreground);
 }
@@ -196,6 +195,9 @@
   .cardactive::after {
     opacity: 0.8;
   }
+  .card{
+    padding: 48px 24px;
+  }
 
 
   .card1,
@@ -224,12 +226,10 @@
   }
 
   .cardtitle {
-    font-size: 24px;
     width: 100%;
   }
 
   .cardtext {
-    font-size: 16px;
     width: 100%;
   }
 

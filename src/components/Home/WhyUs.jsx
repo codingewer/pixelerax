@@ -37,10 +37,9 @@ function WhyUs() {
         >
           <h1>Neden Biz?</h1>
           <p>
-            Biz, her projeyi kendi işimiz gibi görür, sade ve etkili çözümler üretmeye odaklanırız. Mobil uygulamalardan yapay zeka destekli platformlara, veri analizinden özel geliştirdiğimiz araçlara kadar geniş bir yelpazede yüksek kaliteyi ve performansı ön planda tutarız. Teknolojiyi sadece kullanmakla kalmaz, işin ruhunu ve kullanıcı deneyimini derinlemesine anlayarak projelere yansıtırız. Küçük ama çevik bir ekip olarak, hızlı ve esnek hareket eder; ihtiyaçlarınıza özel, size değer katan yazılım çözümleri sunarız. Teslim sonrası destekle, uzun vadeli iş ortaklıkları kurmayı hedefleriz. Eğer işine önem veren, sonuç odaklı bir yazılım ortağı arıyorsan, doğru adrestesin.
-          </p>
+Her projeye kendi işimiz gibi yaklaşır, sade ve güçlü çözümler üretiriz. Mobil uygulamalardan yapay zeka destekli sistemlere kadar, yüksek performanslı yazılımlar geliştiririz. Küçük ama çevik ekibimizle hızlı, esnek ve size özel çözümler sunar, teslim sonrası destekle uzun vadeli iş ortaklıkları kurarız.          </p>
         </div>
-        <Link className="cardlink" href="/">Detaylı Bilgi</Link>
+        <Link className="cardlink" target="_blank" href="https://bionluk.com/coderingewer">Detaylı Bilgi</Link>
       </div>
     </div>
   );

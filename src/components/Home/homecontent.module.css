@@ -45,7 +45,8 @@
 
 /* Buton grid alanı */
 .buttongridcard {
-    padding-block: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     width: 100%;
     display: flex;
     gap: 12px;
@@ -72,18 +73,17 @@
     color: var(--foreground);
     background-color: var(--foreground);
     clip-path: var(--clip-bottom-right);
-    z-index: 0; /* before'un -1 olabilmesi için gerekli */
+    z-index: 0;
 }
 
 .linecardlink::before {
     content: '';
     position: absolute;
-    inset: 1px; /* <--- 1 yerine 1px olmalı */
+    inset: 1px;
     background: var(--background);
     z-index: -1;
     clip-path: var(--clip-bottom-right);
 }
-
 
 /* Tam ekran banner */
 .homebanner {
@@ -105,7 +105,8 @@
     width: 100%;
     height: 100%;
     z-index: 2;
-    padding-block: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .homebannertitle {
@@ -129,28 +130,31 @@
     .bannerlistview,
     .homecardtexts {
         width: 100%;
-        height: 50%;
-        padding-block: 16px;
+        height: auto;
+        padding-top: 16px;
+        padding-bottom: 16px;
         align-items: center;
         text-align: left;
     }
 
     .homecardtexts {
         gap: 0;
-        align-items: start;
+        align-items: flex-start;
         justify-content: center;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 
     .buttongridcard {
         justify-content: center;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 
     .cardlink {
-        font-size: 16px;
-        padding: 10px 20px;
         font-size: 14px;
+        padding: 10px 20px;
     }
-
 
     .homebanner {
         position: relative;
@@ -160,7 +164,10 @@
     }
 
     .homecontentcontainer {
-        padding: 24px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-left: 12px;
+        padding-right: 12px;
         display: flex;
         flex-direction: column;
         min-height: min-content;

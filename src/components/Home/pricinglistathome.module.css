@@ -4,7 +4,6 @@
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
-    padding: 2rem;
     background-color: var(--background);
 }
 
@@ -19,12 +18,13 @@
 .cardContainer {
     display: flex;
     flex-direction: column;
-    gap:2rem;
+    gap: 3rem;
+    width: 90%;
 }
 
 .card {
     border-radius: 1rem;
-    padding: 3rem;
+    padding: 2rem;
     gap: 24px;
     display: flex;
     flex-direction: column;
@@ -39,11 +39,13 @@
     width: 100%;
     font-size: 1.5rem;
     font-weight: 600;
-        color: var(--foreground);
+    color: var(--foreground);
 }
 
 .cardDesc {
     font-size: 1.1rem;
+    width: 100%;
+    text-align: left;
     color: var(--foreground);
     margin-bottom: 1rem;
 }
@@ -51,15 +53,15 @@
 .featureList {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    padding-left: 1.2rem;
-    font-size: 0.9rem;
-    gap: 12px;
+    padding: 0.5rem 0.2rem;
+    width: calc(100%);
+    font-size: 1rem;
+    gap: 1rem;
     color: var(--foreground);
     margin-bottom: 1rem;
 }
 
-.pricecontainer{
+.pricecontainer {
     width: 100%;
     display: flex;
     align-items: center;
@@ -91,20 +93,21 @@
 
     transition: background-color 0.2s ease-in-out;
 }
-.button::after{
+
+.button::after {
     position: absolute;
-   content: "";
-   width: 10px;
-   height: 2px;
-   bottom: 0;
-   left: 0;
-     transition: ease 1s;
-   background-color: var(--foreground);
+    content: "";
+    width: 10px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: ease 1s;
+    background-color: var(--foreground);
 }
 
-.button:hover::after{
+.button:hover::after {
     position: absolute;
-   width: 100%;
+    width: 100%;
 }
 
 .button:hover {
@@ -116,9 +119,9 @@
         flex-direction: row;
         justify-content: center;
     }
+   .card{
+    padding: 3rem;
+   }
 
-    .card {
-        flex: 1;
-        max-width: 400px;
-    }
+    
 }
