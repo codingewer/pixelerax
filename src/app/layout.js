@@ -24,6 +24,9 @@ export const metadata = {
     "Next.js",
     "veri analizi",
     "mithrabyte",
+    "mithra byte",
+    "mithra",
+    "Mithra Byte"
   ],
   metadataBase: new URL("https://mithrabyte.com/"),
   openGraph: {
