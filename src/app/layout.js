@@ -24,11 +24,11 @@ export const metadata = {
     "veri analizi",
     "mithrabyte"
   ],
-  metadataBase: new URL("https://https://mithrabyte.vercel.app/"),
+  metadataBase: new URL("https://mithrabyte.vercel.app/"),
   openGraph: {
     title: "Mithrabyte",
     description: "Yapay zeka destekli mobil ve web uygulamalarıyla işinizi büyütün.",
-    url: "https://https://mithrabyte.vercel.app/",
+    url: "https://mithrabyte.vercel.app/",
     siteName: "Mithrabyte",
     images: [
       {
@@ -56,7 +56,7 @@ export const metadata = {
     },
   },
   alternates: {
-    canonical: "https://https://mithrabyte.vercel.app/",
+    canonical: "https://mithrabyte.vercel.app/",
   },
 };
 
