@@ -85,6 +85,8 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+
+        {/* Structured Data (Organization Schema) */}
         <Script
           id="structured-data"
           type="application/ld+json"
@@ -95,6 +97,10 @@ export default function RootLayout({ children }) {
               name: "Mithrabyte",
               url: "https://mithrabyte.com/",
               logo: "https://mithrabyte.com/logo.png",
+              sameAs: [
+                "https://www.linkedin.com/company/mithrabyte",
+                "https://twitter.com/mithrabyte"
+              ]
             }),
           }}
         />
