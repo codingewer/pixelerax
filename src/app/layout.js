@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,31 +27,9 @@ export const metadata = {
     "mithrabyte",
     "mithra byte",
     "mithra",
-    "Mithra Byte"
+    "Mithra Byte",
   ],
   metadataBase: new URL("https://mithrabyte.com/"),
-  openGraph: {
-    title: "Mithrabyte",
-    description: "Yapay zeka destekli mobil ve web uygulamalarıyla işinizi büyütün.",
-    url: "https://mithrabyte.com/",
-    siteName: "Mithrabyte",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Mithrabyte - Yapay Zeka Destekli Çözümler",
-      },
-    ],
-    locale: "tr_TR",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Mithrabyte",
-    description: "Yapay zeka destekli mobil ve web uygulamalarıyla işinizi büyütün.",
-    images: ["/og-image.png"],
-  },
   robots: {
     index: true,
     follow: true,
@@ -86,7 +65,7 @@ export default function RootLayout({ children }) {
           }}
         />
 
-        {/* Structured Data (Organization Schema) */}
+        {/* Organization Structured Data */}
         <Script
           id="structured-data"
           type="application/ld+json"
@@ -99,13 +78,26 @@ export default function RootLayout({ children }) {
               logo: "https://mithrabyte.com/logo.png",
               sameAs: [
                 "https://www.linkedin.com/company/mithrabyte",
-                "https://twitter.com/mithrabyte"
-              ]
+                "https://twitter.com/mithrabyte",
+              ],
             }),
           }}
         />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <nav
+          style={{
+            display: "flex",
+            gap: "1.5rem",
+            padding: "1rem",
+            borderBottom: "1px solid #ddd",
+          }}
+        >
+          <Link href="/">Ana Sayfa</Link>
+          <Link href="/hakkimizda">Hakkımızda</Link>
+          <Link href="/iletisim">İletişim</Link>
+          <Link href="/hizmetler">Hizmetler</Link>
+        </nav>
         {children}
       </body>
     </html>

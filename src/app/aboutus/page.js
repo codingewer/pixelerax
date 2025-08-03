@@ -3,6 +3,10 @@ import Navbar from '@/components/Navbar/Navbar'
 import SidebarMenu from '@/components/Navbar/SidebarMenu'
 import AboutUs from '@/components/Pages/AboutUs'
 import React from 'react'
+export const metadata = {
+  title: "Hakkımızda | Mithrabyte",
+  description: "Mithrabyte hakkında detaylı bilgileri burada bulabilirsiniz.",
+};
 
 function page() {
   return (
