@@ -85,19 +85,19 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-          <Script
-          id="structured-data"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Mithrabyte",
-              url: "https://mithrabyte.com/",
-              logo: "https://mithrabyte.com/logo.png",
-            }),
-          }}
-        />
+          <<Script
+  id="structured-data"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "Mithrabyte",
+      url: "https://mithrabyte.com/",
+      logo: "https://mithrabyte.com/logo.png",
+    }),
+  }}
+/>
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
