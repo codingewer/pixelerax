@@ -85,6 +85,18 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+         <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Mithrabyte", // Şirket/Site adı
+              url: "https://mithrabyte.com",
+              logo: "https://mithrabyte.com/logo.png",
+            }),
+          }}
+        />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
