@@ -5,13 +5,13 @@ import Script from "next/script";
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk-sans",
   subsets: ["latin"],
-  weight: ["400", "700"]
+  weight: ["400", "700"],
 });
 
 const spaceMono = Space_Mono({
   variable: "--font-space-mono",
   subsets: ["latin"],
-  weight: ["400", "700"], // Sadece bu ağırlıklar destekleniyor
+  weight: ["400", "700"],
 });
 
 export const metadata = {
