@@ -37,9 +37,14 @@ function WhyUs() {
         >
           <h1>Neden Biz?</h1>
           <p>
-Her projeye kendi işimiz gibi yaklaşır, sade ve güçlü çözümler üretiriz. Mobil uygulamalardan yapay zeka destekli sistemlere kadar, yüksek performanslı yazılımlar geliştiririz. Küçük ama çevik ekibimizle hızlı, esnek ve size özel çözümler sunar, teslim sonrası destekle uzun vadeli iş ortaklıkları kurarız.          </p>
-        </div>
+            Her projeye kendi işimiz gibi yaklaşır, sade ve güçlü çözümler üretiriz. 
+            Mobil uygulamalardan yapay zeka destekli sistemlere kadar,
+             yüksek performanslı yazılımlar geliştiririz. Küçük ama 
+             çevik ekibimizle hızlı, esnek ve size özel çözümler sunar, teslim sonrası destekle
+            uzun vadeli iş ortaklıkları kurarız.
+          </p>
         <Link className="cardlink" target="_blank" href="https://bionluk.com/coderingewer">Detaylı Bilgi</Link>
+        </div>
       </div>
     </div>
   );

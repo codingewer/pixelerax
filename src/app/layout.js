@@ -1,16 +1,17 @@
 import "./globals.css";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Space_Grotesk, Space_Mono } from "next/font/google";
 import Script from "next/script";
-import Link from "next/link";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk-sans",
   subsets: ["latin"],
+  weight: ["400", "700"]
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const spaceMono = Space_Mono({
+  variable: "--font-space-mono",
   subsets: ["latin"],
+  weight: ["400", "700"], // Sadece bu ağırlıklar destekleniyor
 });
 
 export const metadata = {
@@ -47,6 +48,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="tr">
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-LP24PHV0M0"
@@ -84,20 +88,7 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <nav
-          style={{
-            display: "flex",
-            gap: "1.5rem",
-            padding: "1rem",
-            borderBottom: "1px solid #ddd",
-          }}
-        >
-          <Link href="/">Ana Sayfa</Link>
-          <Link href="/hakkimizda">Hakkımızda</Link>
-          <Link href="/iletisim">İletişim</Link>
-          <Link href="/hizmetler">Hizmetler</Link>
-        </nav>
+      <body className={`${spaceGrotesk.variable} ${spaceMono.variable}`}>
         {children}
       </body>
     </html>

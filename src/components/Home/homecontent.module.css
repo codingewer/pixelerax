@@ -36,7 +36,6 @@
 .homecardtexts {
     width: 50%;
     height: 100%;
-    gap: 48px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -110,8 +109,8 @@
 }
 
 .homebannertitle {
-    font-size: 3rem;
-    font-weight: 900;
+    font-size: 4rem;
+    font-weight: 700;
 }
 
 /* Mobil uyumluluk: 768px altı */

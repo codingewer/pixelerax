@@ -93,13 +93,18 @@
 
 .whyustexts p {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 /* Masaüstü hover blur */
 @media (min-width: 769px) {
   .whyustexts:hover::after {
     opacity: 0.5;
+  }
+
+
+  .whyustexts h1 {
+    font-size: 48px;
   }
 }
 
@@ -150,7 +155,7 @@
   .whyustexts p {
     font-size: 18px;
     margin: 0;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 1.5;
     color: var(--foreground);
   }

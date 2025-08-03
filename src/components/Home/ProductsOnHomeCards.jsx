@@ -54,27 +54,27 @@ function ProductsOnHomeCards() {
                     <svg className={styles.borderAnim} viewBox="0 0 100 100" preserveAspectRatio="none">
                         <rect x="0.25" y="0.25" width="99.5" height="99.5" rx="4" ry="2" />
                     </svg>
-                    <h1 className={styles.cardtitle} >Veri Analizi Panelleri</h1>
-                    <p className={styles.cardtext} > İşletmenizin verisini gerçek zamanlı olarak analiz edin ve AI destekli panellerimizle karar süreçlerinizi hızlandırın. Gelişmiş görselleştirmeler, özel metrikler ve interaktif raporlarla veriye dayalı stratejiler geliştirmek artık çok kolay
-                    </p>
+                    <span className={styles.cardtitle} >Veri Analizi Panelleri</span>
+                    <span className={styles.cardtext} > İşletmenizin verisini gerçek zamanlı olarak analiz edin ve AI destekli panellerimizle karar süreçlerinizi hızlandırın. Gelişmiş görselleştirmeler, özel metrikler ve interaktif raporlarla veriye dayalı stratejiler geliştirmek artık çok kolay
+                    </span>
                     <Link className="cardlink" href="https://bionluk.com/coderingewer">Teklif Al</Link>
                 </div>
                 <div className={`${styles.card} ${styles.card2} ${isVisible ? styles.cardactive : ""}`}>
                     <svg className={styles.borderAnim} viewBox="0 0 100 100" preserveAspectRatio="none">
                         <rect x="0.25" y="0.25" width="99.5" height="99.5" rx="4" ry="4" />
                     </svg>
-                    <h1 className={styles.cardtitle} >Mobil Uygulamalar</h1>
-                    <p className={styles.cardtext} >  GPT destekli, yüksek performanslı mobil uygulamalar geliştiriyoruz. iOS ve Android uyumlu, offline çalışma ve kişiselleştirme özellikleriyle kullanıcı deneyimini üst seviyeye taşıyor.
-                    </p>
+                    <span className={styles.cardtitle} >Mobil Uygulamalar</span>
+                    <span className={styles.cardtext} >  GPT destekli, yüksek performanslı mobil uygulamalar geliştiriyoruz. iOS ve Android uyumlu, offline çalışma ve kişiselleştirme özellikleriyle kullanıcı deneyimini üst seviyeye taşıyor.
+                    </span>
                     <Link className="cardlink" href="https://bionluk.com/coderingewer">Teklif Al</Link>
                 </div>
                 <div className={`${styles.card} ${styles.card3} ${isVisible ? styles.cardactive : ""}`}>
                     <svg className={styles.borderAnim} viewBox="0 0 100 100" preserveAspectRatio="none">
                         <rect x="0.25" y="0.25" width="99.5" height="99.5" rx="4" ry="4" />
                     </svg>
-                    <h1 className={styles.cardtitle} >Web Uygulamaları</h1>
-                    <p className={styles.cardtext} > Next.js ve AI entegrasyonlu web çözümleri sunuyoruz. SEO dostu, hızlı, erişilebilir ve ölçeklenebilir yapısıyla işletmenizin dijital dönüşümünü destekliyor.
-                    </p>
+                    <span className={styles.cardtitle} >Web Uygulamaları</span>
+                    <span className={styles.cardtext} > Next.js ve AI entegrasyonlu web çözümleri sunuyoruz. SEO dostu, hızlı, erişilebilir ve ölçeklenebilir yapısıyla işletmenizin dijital dönüşümünü destekliyor.
+                    </span>
                     <Link className="cardlink" href="https://bionluk.com/coderingewer">Teklif Al</Link>
                 </div>
              
