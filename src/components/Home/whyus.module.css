@@ -69,7 +69,7 @@
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  gap: 0;
+  gap: 24px;
   padding: 48px;
   box-sizing: border-box;
 }
@@ -132,8 +132,8 @@
 
   .whyustexts {
     width: 100%;
-    padding: 12px;
-    gap: 24px;
+    padding-inline: 48px;
+    gap: 48px;
     border-right: solid 1px var(--foreground-2);
     border-bottom: solid 1px var(--foreground-2);
   }
