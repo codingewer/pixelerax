@@ -36,7 +36,6 @@
   justify-content: end;
   z-index: 3;
   gap: 24px;
-  border: solid 0.5px var(--foreground-2);
 }
 
 .card::after {
