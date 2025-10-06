@@ -34,7 +34,7 @@ export default function Packages() {
   },
   {
     title: "İşletmelere Özel Veri Analizi Panelleri",
-    price: "₺7500+",
+    price: "Yakında",
     url: "https://bionluk.com/coderingewer",
     features: [
       "Gerçek zamanlı veri işleme ve görselleştirme",

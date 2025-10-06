@@ -10,7 +10,7 @@
 .title {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     font-weight: bold;
     color: var(--foreground);
 }
@@ -118,10 +118,10 @@
     .cardContainer {
         flex-direction: row;
         justify-content: center;
-        width: 75%;
+        width: 60%;
     }
    .card{
-    padding: 3rem;
+    padding: 2rem;
    }
 
     
