@@ -16,7 +16,8 @@ const spaceMono = Space_Mono({
 
 export const metadata = {
   title: "Mithrabyte | Yapay Zeka Destekli Çözümler",
-  description: "Yapay zeka destekli mobil ve web uygulamalarıyla işinizi büyütün.",
+  description:
+    "Yapay zeka destekli mobil ve web uygulamalarıyla işinizi büyütün.",
   keywords: [
     "yapay zeka",
     "mobil uygulama",
@@ -50,6 +51,32 @@ export const metadata = {
     apple: "/apple-touch-icon.png",
   },
   manifest: "/manifest.webmanifest",
+
+  // ✅ Open Graph ve Twitter önizleme görüntüleri
+  openGraph: {
+    title: "Mithrabyte | Yapay Zeka Destekli Çözümler",
+    description:
+      "Yapay zeka destekli mobil ve web uygulamalarıyla işinizi büyütün.",
+    url: "https://mithrabyte.com/",
+    siteName: "Mithrabyte",
+    images: [
+      {
+        url: "https://mithrabyte.com/og-image.png", // Buraya kendi OG görsel URL'ini ekle
+        width: 1200,
+        height: 630,
+        alt: "Mithrabyte - Yapay Zeka Destekli Çözümler",
+      },
+    ],
+    locale: "tr_TR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mithrabyte | Yapay Zeka Destekli Çözümler",
+    description:
+      "Yapay zeka destekli mobil ve web uygulamalarıyla işinizi büyütün.",
+    images: ["https://mithrabyte.com/og-image.jpg"], // Aynı görseli Twitter için de kullan
+  },
 };
 
 export default function RootLayout({ children }) {
